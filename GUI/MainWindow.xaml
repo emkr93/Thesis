@@ -1,0 +1,30 @@
+﻿<Window x:Class="GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid Margin="0,0,-8,0">
+        <Label x:Name="title1" Content="Choose your currency:" HorizontalAlignment="Left" Margin="320,31,0,0" VerticalAlignment="Top" Width="133"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="320,57,0,0" VerticalAlignment="Top" Width="133"/>
+        <DatePicker x:Name="beginDate" HorizontalAlignment="Left" Margin="270,115,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="endDate" HorizontalAlignment="Left" Margin="405,115,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Title2" Content="Select the period" HorizontalAlignment="Left" Margin="337,84,0,0" VerticalAlignment="Top" Width="101"/>
+        <ProgressBar Minimum="0" Maximum="100" Name="pbStatus" IsIndeterminate="True"  Visibility="Visible" Margin="337,185,72,110" RenderTransformOrigin="0.485,0.5" />
+        <Label x:Name="From" Content="From :" HorizontalAlignment="Left" Margin="228,114,0,0" VerticalAlignment="Top" Width="42" Height="24"/>
+        <Label x:Name="To" Content="To:" HorizontalAlignment="Left" Margin="377,115,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="RunApp" Content="Run" HorizontalAlignment="Left" Margin="337,158,0,0" VerticalAlignment="Top" Width="101" Click="RunApp_Click"/>
+        <Button x:Name="History" Content="View History" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="93" Click="History_Click"/>
+        <Label x:Name="menu" Content="Manu:" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Width="78"/>
+        <Button x:Name="ShowCharts" Content="Show Charts" HorizontalAlignment="Left" Margin="10,99,0,0" VerticalAlignment="Top" Width="93" Click="ShowCharts_Click"/>
+        <Button x:Name="Tasks" Content="Tasks" HorizontalAlignment="Left" Margin="10,126,0,0" VerticalAlignment="Top" Width="93" Click="Tasks_Click"/>
+        <Button x:Name="Forecasting" Content="Forecast Rate" HorizontalAlignment="Left" Margin="31,288,0,0" VerticalAlignment="Top" Width="93" Click="Forecasting_Click"/>
+        <RadioButton x:Name="SellRate" Content="Sell Rate" HorizontalAlignment="Left" Margin="88,236,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="BuyRate" Content="Buy Rate" HorizontalAlignment="Left" Margin="88,257,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Monthly" Content="Monthly" HorizontalAlignment="Left" Margin="10,239,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Daily" Content="Daily" HorizontalAlignment="Left" Margin="10,260,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

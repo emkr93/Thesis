@@ -1,0 +1,62 @@
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\bin\Debug\GUI.exe.config
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\bin\Debug\GUI.exe
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\bin\Debug\GUI.pdb
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\bin\Debug\EntityFramework.dll
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\bin\Debug\HtmlAgilityPack.dll
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\bin\Debug\Thesis.pdb
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\bin\Debug\EntityFramework.xml
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\bin\Debug\HtmlAgilityPack.xml
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\obj\Debug\MainWindow.g.cs
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\obj\Debug\App.g.cs
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\obj\Debug\GUI_MarkupCompile.cache
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\obj\Debug\GUI_MarkupCompile.lref
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\obj\Debug\MainWindow.baml
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\obj\Debug\GUI.g.resources
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\obj\Debug\GUI.exe
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\obj\Debug\GUI.pdb
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\bin\Debug\Thesis.dll
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\obj\Debug\ShowHistory.g.cs
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\GUI\obj\Debug\ShowHistory.baml
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\bin\Debug\GUI.exe.config
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\bin\Debug\GUI.exe
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\bin\Debug\GUI.pdb
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\bin\Debug\EntityFramework.dll
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\bin\Debug\Thesis.dll
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\bin\Debug\WPFToolkit.dll
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\bin\Debug\HtmlAgilityPack.dll
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\bin\Debug\Thesis.pdb
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\bin\Debug\EntityFramework.xml
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.pdb
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\bin\Debug\WPFToolkit.pdb
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\bin\Debug\HtmlAgilityPack.xml
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\AddTask.g.cs
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\Charts..g.cs
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\MainWindow.g.cs
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\ShowHistory.g.cs
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\Tasks.g.cs
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\App.g.cs
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\GUI_MarkupCompile.cache
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\GUI_MarkupCompile.lref
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\AddTask.baml
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\Charts..baml
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\MainWindow.baml
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\ShowHistory.baml
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\Tasks.baml
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\GUI.g.resources
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\GUI.exe
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\GUI.pdb
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\TaskDetails.g.cs
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\GUI\obj\Debug\TaskDetails.baml

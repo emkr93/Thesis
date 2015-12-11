@@ -1,0 +1,26 @@
+﻿<Window x:Class="GUI.TaskDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="TaskDetails" Height="300" Width="300">
+    <Grid>
+        <Label x:Name="TaskID" Content="Task ID:" HorizontalAlignment="Left" Margin="25,25,0,0" VerticalAlignment="Top" Width="85"/>
+        <Label x:Name="CurrencyCode" Content="Currency Code: " HorizontalAlignment="Left" Margin="25,56,0,0" VerticalAlignment="Top" Width="223"/>
+        <Label x:Name="BuyRate" Content="Buy Rate:" HorizontalAlignment="Left" Margin="25,180,0,0" VerticalAlignment="Top" Width="108"/>
+        <Label x:Name="SellRate" Content="Sell Rate:" HorizontalAlignment="Left" Margin="25,149,0,0" VerticalAlignment="Top" Width="108"/>
+        <Label x:Name="EndDate" Content="End Date: " HorizontalAlignment="Left" Margin="25,118,0,0" VerticalAlignment="Top" Width="85"/>
+        <Label x:Name="StartDate" Content="Start Date:" HorizontalAlignment="Left" Margin="25,87,0,0" VerticalAlignment="Top" Width="85"/>
+        <Label x:Name="TargetCourse" Content="Target Course:" HorizontalAlignment="Left" Margin="25,206,0,0" VerticalAlignment="Top" Width="108"/>
+        <TextBox x:Name="sellRate" HorizontalAlignment="Left" Height="23" Margin="128,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="buyRate" HorizontalAlignment="Left" Height="23" Margin="128,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="targetCourse" HorizontalAlignment="Left" Height="23" Margin="128,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="startDate" HorizontalAlignment="Left" Margin="128,87,0,0" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="endDate" HorizontalAlignment="Left" Margin="128,123,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="edit" Content="Edit" HorizontalAlignment="Left" Margin="108,239,0,0" VerticalAlignment="Top" Width="84" Click="edit_Click"/>
+        <Label x:Name="ID" Content="" HorizontalAlignment="Left" Margin="128,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.439,0.426" Width="64"/>
+
+    </Grid>
+</Window>

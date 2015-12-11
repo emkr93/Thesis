@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="95c408b9e85946459734d25243b8b5c2" Name="Diagram1">
+        <EntityTypeShape EntityType="CurrencyModel.CurrencyCode" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="CurrencyModel.CurrencyRate" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CurrencyModel.Task" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <AssociationConnector Association="CurrencyModel.FK_CurrencyCode" ManuallyRouted="false" />
+        <AssociationConnector Association="CurrencyModel.fk_CurrencyCodeID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

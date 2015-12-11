@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CurrencyModelStoreContainer" CdmEntityContainer="CurrencyEntities">
+    <EntitySetMapping Name="CurrencyCodes">
+      <EntityTypeMapping TypeName="CurrencyModel.CurrencyCode">
+        <MappingFragment StoreEntitySet="CurrencyCode">
+          <ScalarProperty Name="CurrencyCode1" ColumnName="CurrencyCode" />
+          <ScalarProperty Name="CurrencyName" ColumnName="CurrencyName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurrencyRates">
+      <EntityTypeMapping TypeName="CurrencyModel.CurrencyRate">
+        <MappingFragment StoreEntitySet="CurrencyRate">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CurrencyCodeID" ColumnName="CurrencyCodeID" />
+          <ScalarProperty Name="RateDate" ColumnName="RateDate" />
+          <ScalarProperty Name="SellRate" ColumnName="SellRate" />
+          <ScalarProperty Name="BuyRate" ColumnName="BuyRate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tasks">
+      <EntityTypeMapping TypeName="CurrencyModel.Task">
+        <MappingFragment StoreEntitySet="Tasks">
+          <ScalarProperty Name="Tolerance" ColumnName="Tolerance" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IsAccomplished" ColumnName="IsAccomplished" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="CCID" ColumnName="CCID" />
+          <ScalarProperty Name="TargetCourse" ColumnName="TargetCourse" />
+          <ScalarProperty Name="SellRate" ColumnName="SellRate" />
+          <ScalarProperty Name="BuyRate" ColumnName="BuyRate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

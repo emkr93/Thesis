@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CurrencyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CurrencyCode">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="CurrencyCode" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="CurrencyName" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CurrencyRate">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CurrencyCodeID" Type="int" Nullable="false" />
+          <Property Name="RateDate" Type="date" Nullable="false" />
+          <Property Name="SellRate" Type="money" Nullable="false" />
+          <Property Name="BuyRate" Type="money" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Tasks">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IsAccomplished" Type="bit" Nullable="false" />
+          <Property Name="StartDate" Type="date" Nullable="false" />
+          <Property Name="EndDate" Type="date" Nullable="false" />
+          <Property Name="CCID" Type="int" Nullable="false" />
+          <Property Name="TargetCourse" Type="money" Nullable="false" />
+          <Property Name="SellRate" Type="bit" />
+          <Property Name="BuyRate" Type="bit" />
+          <Property Name="Tolerance" Type="money" />
+        </EntityType>
+        <Association Name="FK_CurrencyCode">
+          <End Role="CurrencyCode" Type="Self.CurrencyCode" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CurrencyRate" Type="Self.CurrencyRate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CurrencyCode">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="CurrencyRate">
+              <PropertyRef Name="CurrencyCodeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_CurrencyCodeID">
+          <End Role="CurrencyCode" Type="Self.CurrencyCode" Multiplicity="1" />
+          <End Role="Tasks" Type="Self.Tasks" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CurrencyCode">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Tasks">
+              <PropertyRef Name="CCID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CurrencyModelStoreContainer">
+          <EntitySet Name="CurrencyCode" EntityType="Self.CurrencyCode" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CurrencyRate" EntityType="Self.CurrencyRate" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tasks" EntityType="Self.Tasks" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_CurrencyCode" Association="Self.FK_CurrencyCode">
+            <End Role="CurrencyCode" EntitySet="CurrencyCode" />
+            <End Role="CurrencyRate" EntitySet="CurrencyRate" />
+          </AssociationSet>
+          <AssociationSet Name="fk_CurrencyCodeID" Association="Self.fk_CurrencyCodeID">
+            <End Role="CurrencyCode" EntitySet="CurrencyCode" />
+            <End Role="Tasks" EntitySet="Tasks" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CurrencyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CurrencyCode">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="CurrencyCode1" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CurrencyName" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="CurrencyRates" Relationship="Self.FK_CurrencyCode" FromRole="CurrencyCode" ToRole="CurrencyRate" />
+          <NavigationProperty Name="Tasks" Relationship="Self.fk_CurrencyCodeID" FromRole="CurrencyCode" ToRole="Tasks" />
+        </EntityType>
+        <EntityType Name="CurrencyRate">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CurrencyCodeID" Type="Int32" Nullable="false" />
+          <Property Name="RateDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="SellRate" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="BuyRate" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <NavigationProperty Name="CurrencyCode" Relationship="Self.FK_CurrencyCode" FromRole="CurrencyRate" ToRole="CurrencyCode" />
+        </EntityType>
+        <EntityType Name="Task">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IsAccomplished" Type="Boolean" Nullable="false" />
+          <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="EndDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="CCID" Type="Int32" Nullable="false" />
+          <Property Name="TargetCourse" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="SellRate" Type="Boolean" />
+          <Property Name="BuyRate" Type="Boolean" />
+          <NavigationProperty Name="CurrencyCode" Relationship="Self.fk_CurrencyCodeID" FromRole="Tasks" ToRole="CurrencyCode" />
+          <Property Name="Tolerance" Type="Decimal" Precision="19" Scale="4" />
+        </EntityType>
+        <Association Name="FK_CurrencyCode">
+          <End Role="CurrencyCode" Type="Self.CurrencyCode" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CurrencyRate" Type="Self.CurrencyRate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CurrencyCode">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="CurrencyRate">
+              <PropertyRef Name="CurrencyCodeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_CurrencyCodeID">
+          <End Role="CurrencyCode" Type="Self.CurrencyCode" Multiplicity="1" />
+          <End Role="Tasks" Type="Self.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CurrencyCode">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Tasks">
+              <PropertyRef Name="CCID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CurrencyEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CurrencyCodes" EntityType="Self.CurrencyCode" />
+          <EntitySet Name="CurrencyRates" EntityType="Self.CurrencyRate" />
+          <EntitySet Name="Tasks" EntityType="Self.Task" />
+          <AssociationSet Name="FK_CurrencyCode" Association="Self.FK_CurrencyCode">
+            <End Role="CurrencyCode" EntitySet="CurrencyCodes" />
+            <End Role="CurrencyRate" EntitySet="CurrencyRates" />
+          </AssociationSet>
+          <AssociationSet Name="fk_CurrencyCodeID" Association="Self.fk_CurrencyCodeID">
+            <End Role="CurrencyCode" EntitySet="CurrencyCodes" />
+            <End Role="Tasks" EntitySet="Tasks" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CurrencyModelStoreContainer" CdmEntityContainer="CurrencyEntities">
+          <EntitySetMapping Name="CurrencyCodes">
+            <EntityTypeMapping TypeName="CurrencyModel.CurrencyCode">
+              <MappingFragment StoreEntitySet="CurrencyCode">
+                <ScalarProperty Name="CurrencyCode1" ColumnName="CurrencyCode" />
+                <ScalarProperty Name="CurrencyName" ColumnName="CurrencyName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CurrencyRates">
+            <EntityTypeMapping TypeName="CurrencyModel.CurrencyRate">
+              <MappingFragment StoreEntitySet="CurrencyRate">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CurrencyCodeID" ColumnName="CurrencyCodeID" />
+                <ScalarProperty Name="RateDate" ColumnName="RateDate" />
+                <ScalarProperty Name="SellRate" ColumnName="SellRate" />
+                <ScalarProperty Name="BuyRate" ColumnName="BuyRate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tasks">
+            <EntityTypeMapping TypeName="CurrencyModel.Task">
+              <MappingFragment StoreEntitySet="Tasks">
+                <ScalarProperty Name="Tolerance" ColumnName="Tolerance" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="IsAccomplished" ColumnName="IsAccomplished" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="CCID" ColumnName="CCID" />
+                <ScalarProperty Name="TargetCourse" ColumnName="TargetCourse" />
+                <ScalarProperty Name="SellRate" ColumnName="SellRate" />
+                <ScalarProperty Name="BuyRate" ColumnName="BuyRate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

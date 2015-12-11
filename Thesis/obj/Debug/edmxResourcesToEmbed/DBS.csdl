@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CurrencyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CurrencyCode">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="CurrencyCode1" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CurrencyName" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="CurrencyRates" Relationship="Self.FK_CurrencyCode" FromRole="CurrencyCode" ToRole="CurrencyRate" />
+    <NavigationProperty Name="Tasks" Relationship="Self.fk_CurrencyCodeID" FromRole="CurrencyCode" ToRole="Tasks" />
+  </EntityType>
+  <EntityType Name="CurrencyRate">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CurrencyCodeID" Type="Int32" Nullable="false" />
+    <Property Name="RateDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="SellRate" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="BuyRate" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="CurrencyCode" Relationship="Self.FK_CurrencyCode" FromRole="CurrencyRate" ToRole="CurrencyCode" />
+  </EntityType>
+  <EntityType Name="Task">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IsAccomplished" Type="Boolean" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="EndDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CCID" Type="Int32" Nullable="false" />
+    <Property Name="TargetCourse" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="SellRate" Type="Boolean" />
+    <Property Name="BuyRate" Type="Boolean" />
+    <NavigationProperty Name="CurrencyCode" Relationship="Self.fk_CurrencyCodeID" FromRole="Tasks" ToRole="CurrencyCode" />
+    <Property Name="Tolerance" Type="Decimal" Precision="19" Scale="4" />
+  </EntityType>
+  <Association Name="FK_CurrencyCode">
+    <End Role="CurrencyCode" Type="Self.CurrencyCode" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CurrencyRate" Type="Self.CurrencyRate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CurrencyCode">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CurrencyRate">
+        <PropertyRef Name="CurrencyCodeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_CurrencyCodeID">
+    <End Role="CurrencyCode" Type="Self.CurrencyCode" Multiplicity="1" />
+    <End Role="Tasks" Type="Self.Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CurrencyCode">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tasks">
+        <PropertyRef Name="CCID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CurrencyEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CurrencyCodes" EntityType="Self.CurrencyCode" />
+    <EntitySet Name="CurrencyRates" EntityType="Self.CurrencyRate" />
+    <EntitySet Name="Tasks" EntityType="Self.Task" />
+    <AssociationSet Name="FK_CurrencyCode" Association="Self.FK_CurrencyCode">
+      <End Role="CurrencyCode" EntitySet="CurrencyCodes" />
+      <End Role="CurrencyRate" EntitySet="CurrencyRates" />
+    </AssociationSet>
+    <AssociationSet Name="fk_CurrencyCodeID" Association="Self.fk_CurrencyCodeID">
+      <End Role="CurrencyCode" EntitySet="CurrencyCodes" />
+      <End Role="Tasks" EntitySet="Tasks" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,26 @@
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\Thesis\obj\Debug\Thesis.pdb
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\Thesis\bin\Debug\Thesis.pdb
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\Thesis\bin\Debug\EntityFramework.dll
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\Thesis\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\Thesis\bin\Debug\HtmlAgilityPack.dll
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\Thesis\bin\Debug\EntityFramework.xml
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\Thesis\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\Thesis\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\Thesis\bin\Debug\HtmlAgilityPack.xml
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\Thesis\bin\Debug\Thesis.dll.config
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\Thesis\bin\Debug\Thesis.dll
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\Thesis\obj\Debug\Thesis.dll
+C:\Users\mateusz.kurowski\Documents\Visual Studio 2015\Projects\Thesis\Thesis\obj\Debug\ParserXmlComponent.csprojResolveAssemblyReference.cache
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\Thesis\bin\Debug\Thesis.dll.config
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\Thesis\bin\Debug\Thesis.dll
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\Thesis\bin\Debug\Thesis.pdb
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\Thesis\bin\Debug\EntityFramework.dll
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\Thesis\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\Thesis\bin\Debug\HtmlAgilityPack.dll
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\Thesis\bin\Debug\EntityFramework.xml
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\Thesis\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\Thesis\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\Thesis\bin\Debug\HtmlAgilityPack.xml
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\Thesis\obj\Debug\Thesis.dll
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\Thesis\obj\Debug\Thesis.pdb
+C:\Users\mateusz.kurowski\Desktop\Thesis\Thesis\Thesis\obj\Debug\ParserXmlComponent.csprojResolveAssemblyReference.cache
